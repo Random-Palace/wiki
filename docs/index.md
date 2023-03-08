@@ -1,17 +1,12 @@
-# Welcome to MkDocs
+# ^^Bienvenue sur le wiki **Randomia**^^
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Cette plateforme à pour but de vous guider au travers du serveur du téléchargement du launcher jusqu'au boss les plus compliqués.
 
-## Commands
+## Pour débuter
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* [[:wrench:] Installation et Configuration](/install/) - Installer le launcher.
+* [[:earth_africa:] Le monde en bref](#) - Découvrir le monde.
 
-## Project layout
+## Débuter son aventure
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* [[:fairy:] Les races](#) - Choisir une race.
