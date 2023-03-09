@@ -1,18 +1,23 @@
 nav:
-    - Home: index.md
+    - Accueil: index.md
     - Installation et Configuration:
         - install/index.md 
-        - Configuration : install/parametres.md
+        - Configuration : install/configuration.md
+        - Rejoindre le serveur : install/rejoindre.md
 
 
 
 site_name: Randomia wiki
 repo_url: https://github.com/Random-Palace/wiki
 repo_name: Random-Palace/wiki
+copyright: Copyright &copy; 2023 Random Palace
 extra:
   homepage: https://randomia.random-palace.fr/
+  generator: false
 theme:
     features:
+        - navigation.footer
+        - navigation.top
         - navigation.path
         - navigation.expand
         - navigation.sections
@@ -45,6 +50,9 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  - def_list
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true

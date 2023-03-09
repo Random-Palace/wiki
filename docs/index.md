@@ -7,6 +7,6 @@ Cette plateforme à pour but de vous guider au travers du serveur du télécharg
 * [[:wrench:] Installation et Configuration](/install/) - Installer le launcher.
 * [[:earth_africa:] Le monde en bref](#) - Découvrir le monde.
 
-## Débuter son aventure
+## Commencer son aventure
 
 * [[:fairy:] Les races](#) - Choisir une race.
