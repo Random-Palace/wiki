@@ -1,9 +1,17 @@
 nav:
-    - Accueil: index.md
-    - Installation et Configuration:
-        - install/index.md 
-        - Configuration : install/configuration.md
-        - Rejoindre le serveur : install/rejoindre.md
+  - Accueil: index.md
+  - Installation et Configuration:
+    - install/index.md 
+    - Configuration : install/configuration.md
+    - Rejoindre le serveur : install/rejoindre.md
+  - Le Monde :
+    - monde/index.md
+    - En Bref: monde/enbref.md
+  - Jouer sur Randomia: 
+    - jouer/index.md
+  - Guide des mods : 
+    - guide/index.md
+
 
 
 
@@ -14,29 +22,38 @@ copyright: Copyright &copy; 2023 Random Palace
 extra:
   homepage: https://randomia.random-palace.fr/
   generator: false
-theme:
-    features:
-        - navigation.footer
-        - navigation.top
-        - navigation.path
-        - navigation.expand
-        - navigation.sections
-        - navigation.instant
-        - navigation.tabs
-    name: material
-    language: fr
-    palette: 
-    # Palette toggle for light mode
-    - scheme: default
-      toggle:
-        icon: material/lightbulb
-        name: Switch to dark mode
+  social :
+    - icon: simple/discord
+      link: https://discord.gg/aG6d7EGst5
+    - icon: fontawesome/brands/github
+      link: https://github.com/Random-Palace
 
-    # Palette toggle for dark mode
-    - scheme: slate
-      toggle:
-        icon: material/lightbulb-outline
-        name: Switch to light mode
+theme:
+  favicon: assets/images/favicon.png
+  logo : assets/images/favicon.png
+  features:
+    - navigation.footer
+    - navigation.top
+    - navigation.path
+    - navigation.expand
+    - navigation.sections
+    - navigation.instant
+    - navigation.tabs
+  name: material
+  language: fr
+  palette: 
+  # Palette toggle for light mode
+  - scheme: default
+    toggle:
+      icon: material/lightbulb
+      name: Switch to dark mode
+
+  # Palette toggle for dark mode
+  - scheme: slate
+    toggle:
+      icon: material/lightbulb-outline
+      name: Switch to light mode
+
 markdown_extensions:
   - admonition
   - pymdownx.details
