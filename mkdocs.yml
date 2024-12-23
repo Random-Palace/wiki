@@ -1,9 +1,14 @@
 nav:
   - Accueil: index.md
-  - Installation et Configuration:
-    - install/index.md 
-    - Configuration : install/configuration.md
-    - Rejoindre le serveur : install/rejoindre.md
+  - Faire évoluer sa nation: 
+    - nation/index.md
+    - Les ères: 
+      - Age du Bois ( défaut ) : nation/era/bois.md
+      - Age de Pierre: nation/era/pierre.md
+  ##- Installation et Configuration:
+  ##  - install/index.md 
+  ##  - Configuration : install/configuration.md
+  ##  - Rejoindre le serveur : install/rejoindre.md
   - Le Monde :
     - monde/index.md
     - En Bref: monde/enbref.md
@@ -18,7 +23,7 @@ nav:
 site_name: Randomia wiki
 repo_url: https://github.com/Random-Palace/wiki
 repo_name: Random-Palace/wiki
-copyright: Copyright &copy; 2023 Random Palace
+copyright: Copyright &copy; 2024 Random Palace
 extra:
   homepage: https://randomia.random-palace.fr/
   generator: false
@@ -43,16 +48,19 @@ theme:
   language: fr
   palette: 
   # Palette toggle for light mode
-  - scheme: default
-    toggle:
-      icon: material/lightbulb
-      name: Switch to dark mode
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
 
-  # Palette toggle for dark mode
-  - scheme: slate
-    toggle:
-      icon: material/lightbulb-outline
-      name: Switch to light mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 markdown_extensions:
   - admonition
@@ -69,7 +77,15 @@ markdown_extensions:
   - pymdownx.tilde
   - def_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
